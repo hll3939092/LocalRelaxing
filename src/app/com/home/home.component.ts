@@ -20,8 +20,8 @@ export class Page {
 }
 
 const Pages: Page[] = [
-  { id: '11', name: 'Mr. Nice' },
-  { id: '12', name: 'Narco' },
+  { id: '11', name: '1.jpg' },
+  { id: '12', name: '2.jpg' },
   { id: '13', name: 'Bombasto' },
   { id: '14', name: 'Celeritas' },
   { id: '15', name: 'Magneta' },

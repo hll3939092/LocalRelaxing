@@ -9,7 +9,7 @@ import { LinkComponent } from './com/link/link.component';
 
 export const appRoutes: Routes = [
   { path: 'Home', component: HomeComponent },
-  { path: 'Link',      component: LinkComponent }
+  { path: 'Link', component: LinkComponent }
 ];
 
 @NgModule({
