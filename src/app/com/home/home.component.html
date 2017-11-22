@@ -1,11 +1,24 @@
 <p>
   home works!
 </p>
-<div *ngFor="let Page of pages" >
-  <div>
-    <ul>
-      <li>{{Page.id}}</li>
-     <img type="image" src="../home/2.jpg" style="padding:3px; cursor: pointer;" title="Login with Google" />
-    </ul>
-  </div>
+
+<h1>imagesLoaded - background selector</h1>
+
+<p class="status">&nbsp;</p>
+
+<div class="container">
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+  <div class="box multi1"></div>
+  <div class="box box4"></div>
+  <div class="box box5"></div>
+  <div class="box multi2"></div>
+  <div *ngFor="let Page of pages" class="box box3">
+    <div>
+        <img class="pullinboot" type="image" src="C:\2.jpg" style="padding:3px; cursor: pointer;" title="Login with Google" />
+    </div>
 </div>
+
+
+
+
