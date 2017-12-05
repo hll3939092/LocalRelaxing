@@ -8,4 +8,10 @@ import { RouterModule, Routes } from '@angular/router';
 })
 export class AppComponent {
   title = 'app';
+  submit(web, action) {
+    alert('hi');
+    window.location.href = 'http://localhost:8080/comic/api/' + web + '/' + action;
+}
+
+
 }

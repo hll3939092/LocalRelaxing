@@ -1,49 +1,44 @@
+* { box-sizing: border-box; }
+
 body { font-family: sans-serif; }
 
-.status {
-  padding: 10px;
-  background: #DDD;
+/* ---- grid ---- */
+
+.grid {
+  background: #EEE;
+  max-width: 1200px;
 }
 
-.box {
-  width: 240px;
-  height: 240px;
-  display: inline-block;
-  border: 1px solid;
-  background-size: cover;
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
-.box1 {
-  background-image: url(./1.jpg);
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 160px;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
 }
 
-.box2 {
-  background-image: url(https://lorempixel.com/402/402/city);
+.grid-item img{
+  max-width: 100px;
 }
 
-.box4 {
-  background-image: url(https://lorempixel.com/404/404/transport);
-}
+.grid-item--width2 { width: 320px; }
+.grid-item--width3 { width: 480px; }
+.grid-item--width4 { width: 640px; }
 
-.box5 {
-  background-image: url(https://lorempixel.com/405/405/technics);
-}
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
 
-/* multiple backgrounds */
-.multi1 {
-  /* single bg fallback */
-  background-image: url(https://lorempixel.com/403/403/abstract);
-  background-image:
-    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/mario-shell.png),
-    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/fireflower.png),
-    url(https://lorempixel.com/403/403/abstract);
-}
-
-.multi2 {
-  /* single bg fallback */
-  background-image: url(https://lorempixel.com/406/406/abstract);
-  background-image:
-    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/shyguy.png),
-    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/nabbit.png),
-    url(https://lorempixel.com/406/406/abstract);
+button {
+  font-size: 20px;
 }

@@ -5,12 +5,18 @@ import { AppComponent } from './app.component';
 import { RollbarComponent } from './com/rollbar/rollbar.component';
 import { HomeComponent } from './com/home/home.component';
 import { LinkComponent } from './com/link/link.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 export const appRoutes: Routes = [
   { path: 'Home', component: HomeComponent },
   { path: 'Link', component: LinkComponent }
 ];
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -21,7 +27,8 @@ export const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, { enableTracing: true })
+    RouterModule.forRoot(appRoutes, { enableTracing: true }),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
