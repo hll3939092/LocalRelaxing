@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-home',
@@ -11,14 +11,14 @@ export class HomeComponent implements OnInit {
   pages = Pages;
 
   results: string;
+  page: Page;
 
 
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: Http) { }
 
   ngOnInit(): void {
-  this.http.get<ItemResponse>('http://localhost:8080/Comic/pic').subscribe(data => {
-    this.results = data.name;
+  this.http.get('http://localhost:8080/Comic/pic').subscribe(data => {
+    this.page = data.json();
   });
   }
 

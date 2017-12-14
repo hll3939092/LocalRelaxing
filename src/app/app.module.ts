@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { RollbarComponent } from './com/rollbar/rollbar.component';
 import { HomeComponent } from './com/home/home.component';
 import { LinkComponent } from './com/link/link.component';
-import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './com/login/login.component';
+import { HttpModule } from '@angular/http';
 
 
 
 export const appRoutes: Routes = [
   { path: 'Home', component: HomeComponent },
-  { path: 'Link', component: LinkComponent }
+  { path: 'Link', component: LinkComponent },
+  { path: 'login', component: LoginComponent }
 ];
 
 
@@ -24,11 +26,12 @@ export const appRoutes: Routes = [
     RollbarComponent,
     HomeComponent,
     LinkComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { enableTracing: true }),
-    HttpClientModule,
+    HttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

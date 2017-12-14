@@ -10,8 +10,6 @@ export class AppComponent {
   title = 'app';
   submit(web, action) {
     alert('hi');
-    window.location.href = 'http://localhost:8080/comic/api/' + web + '/' + action;
+    window.location.href = 'https://github.com/login/oauth/authorize?client_id=ef7eadcf10f1c729a7ea';
 }
-
-
 }
