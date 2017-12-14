@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { RollbarComponent } from './com/rollbar/rollbar.component';
 import { HomeComponent } from './com/home/home.component';
 import { LinkComponent } from './com/link/link.component';
+import {LoginComponent} from './com/login/login.component';
 
 
 export const appRoutes: Routes = [
   { path: 'Home', component: HomeComponent },
-  { path: 'Link', component: LinkComponent }
+  { path: 'Link', component: LinkComponent },
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({
@@ -18,6 +20,7 @@ export const appRoutes: Routes = [
     RollbarComponent,
     HomeComponent,
     LinkComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
